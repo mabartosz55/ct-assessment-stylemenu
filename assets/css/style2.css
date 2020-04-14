@@ -3,6 +3,10 @@
     Add a CSS ruleset to accomplish the following:
     - Use the 'Oswald' font family at 14px throughout the body of the document.
 */
+body {
+    font-family: Oswald;
+    font-size: 14px;
+}
 
 nav {
     font-family: sans-serif;
@@ -20,6 +24,11 @@ nav {
         - set the font size to 46px 
         - use a lighter weight font
 */
+h1 {
+    font-family: Bungee Inline;
+    font-size: 46px;
+    font-weight: lighter;
+}
 
 #menu {
     columns: 420px 2;
@@ -40,6 +49,11 @@ h2 {
         - Show each of the section headings of the menu in uppercase
 */
 
+h2 {
+    font-family: Oswald;
+    text-transform: uppercase;
+}
+
 /* 
      Update the following ruleset (dt) to accomplish the following:
         - Make the name of each menu item appear in bold 
@@ -48,12 +62,19 @@ h2 {
 
 dt {
     display: inline;
+    font-family: Oswald;
+    font-weight: bolder;
+    font-size: 16px;
 }
 
 /* 
     Add a CSS ruleset to accomplish the following:
     - Make a comma appear after the name of each menu item
 */
+
+dt::after {
+    content: ",";
+}
 
 dd {
     display: inline;
@@ -77,7 +98,16 @@ dd::after {
     - right align the text in the footer
 */
 
+footer {
+    text-align: right;
+}
+
 /* 
     Add a CSS ruleset targeting the starters and desserts sections to accomplish the following:
     - draw a 2px black border around the sections
 */
+#starters, #desserts {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
